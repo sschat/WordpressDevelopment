@@ -1,0 +1,2 @@
+[Feb 21, 2012 15:11:27 1-error] HTTP Loopback Connections are not enabled on this server. You may encounter stalled or significantly delayed backups. <a href="http://ithemes.com/codex/page/BackupBuddy:_Frequent_Support_Issues#HTTP_Loopback_Connections_Disabled" target="_new">Click for instructions on how to resolve this issue.</a> Error Code: 
+[Feb 21, 2012 15:22:52 1-error] One or more errors encountered. Please correct the following errors and try again:<br>ImportBuddy password and confirmation password inputs do not match. Error Code: 

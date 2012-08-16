@@ -1,0 +1,75 @@
+/* 
+    Document   : ssa_rt_nots
+    Created on : 10-nov-2011, 11:11:17
+    Author     : sschat
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.ssa_rt_not {
+
+    position:   fixed;
+    top:            0px;
+    right:          0px;
+    z-index:    999999;
+
+}
+.ssa_rt_not ul {
+    list-style: none;
+    margin: 0;
+}
+
+.ssa_rt_not ul li {
+
+    height:       35px;
+    width:         200px;
+    margin:      5px 40px ;
+    padding:    10px;
+    display:      none;
+
+    border:solid 2px #555;
+     -webkit-border-radius:4px;
+     -moz-border-radius:4px;
+     border-radius: 4px;
+
+     color:#383838;
+     font-size: 14px;
+     
+     background-color:#ffffff;
+     background-image: -moz-linear-gradient(top, #ffffff 0%, #d9d9d9 100%);
+     background-image: -webkit-linear-gradient(top, #ffffff 0%, #d9d9d9 100%);
+     background-image: -o-linear-gradient(top, #ffffff 0%, #d9d9d9 100%);
+     background-image: -ms-linear-gradient(top, #ffffff 0% ,#d9d9d9 100%);
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9d9d9', endColorstr='#d9d9d9',GradientType=0 );
+     background-image: linear-gradient(top, #ffffff 0% ,#d9d9d9 100%);
+     -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+     -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;
+     box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+
+     text-shadow: 0px 1px 1px #ffffff;
+     filter: dropshadow(color=#ffffff, offx=0, offy=1);
+
+}
+.ssa_rt_not ul li:first-child {
+
+margin-top: 40px;
+
+}
+
+.ssa_rt_not ul li:nth-child(even)
+{
+     background-color:#e9e9e9;
+     background-image: -moz-linear-gradient(top, #e9e9e9 0%, #c9c9c9 100%);
+     background-image: -webkit-linear-gradient(top, #e9e9e9 0%, #c9c9c9 100%);
+     background-image: -o-linear-gradient(top, #e9e9e9 0%, #c9c9c9 100%);
+     background-image: -ms-linear-gradient(top, #e9e9e9 0% ,#c9c9c9 100%);
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9e9e9', endColorstr='#c9c9c9',GradientType=0 );
+     background-image: linear-gradient(top, #e9e9e9 0% ,#c9c9c9 100%);
+}
+
+
+.ssa_rt_not ul li:hover
+{
+     background:#d9d9d9;
+    
+}

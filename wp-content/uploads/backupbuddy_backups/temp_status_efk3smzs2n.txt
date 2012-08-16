@@ -1,0 +1,58 @@
+1329837241|details|(Started new PHP page load process.)
+1329837241|details|Setting greedy script limits.
+1329837241|details|Attempted to increase maximum PHP runtime. Original: 30; New: 7200.
+1329837241|details|Set memory limit to 256M. Previous value < 256M.
+1329837241|details|Original PHP memory limit: 32; New: 256M.
+1329837241|details|Finished greedy script limits.
+1329837241|details|Peak memory usage: 20.137 MB
+1329837241|action|start_database
+1329837241|message|Starting database backup process.
+1329837242|message|Saving database content to file. (20 tables)
+1329837242|message|Only including WordPress tables in backup (unless more explicitly defined).
+1329837242|details|Beginning actual SQL dump.
+1329837242|details|Finished actual SQL dump.
+1329837242|status|database_end
+1329837242|action|finish_database
+1329837242|details|Finished function `backup_create_database_dump`.
+1329837242|details|Peak memory usage: 20.59 MB
+1329837242|details|Scheduling Cron
+1329837775|details|(Started new PHP page load process.)
+1329837775|details|Setting greedy script limits.
+1329837775|details|Attempted to increase maximum PHP runtime. Original: 30; New: 7200.
+1329837775|details|Set memory limit to 256M. Previous value < 256M.
+1329837775|details|Original PHP memory limit: 32; New: 256M.
+1329837775|details|Finished greedy script limits.
+1329837775|details|Peak memory usage: 19.611 MB
+1329837775|action|start_files
+1329837775|details|Using all available zip methods in preferred order.
+1329837775|details|Creating ZIP file `/Users/sschat/WEBSITE/mydev.local/wp-content/uploads/backupbuddy_backups/backup-mydev_local-2012_02_21-efk3smzs2n.zip`. Adding directory `/Users/sschat/WEBSITE/mydev.local/`. Compression: 1; Excludes: wp-content/uploads/backupbuddy_backups/
+1329837775|details|Using exec() method for ZIP.
+1329837775|details|Calculating directories to exclude from backup.
+1329837775|details|Excluding: wp-content/uploads/backupbuddy_backups/
+1329837775|message|Only excluding archives directory based on settings. 1 total.
+1329837775|details|Exec command (Linux): zip -q -r -b '/Users/sschat/WEBSITE/mydev.local/wp-content/uploads/backupbuddy_backups/temp_zip_efk3smzs2n/' '/Users/sschat/WEBSITE/mydev.local/wp-content/uploads/backupbuddy_backups/backup-mydev_local-2012_02_21-efk3smzs2n.zip' . -i '*' -x 'wp-content/uploads/backupbuddy_backups/*' "/importbuddy.php"
+1329837783|message|Full speed mode completed & generated ZIP file.
+1329837783|message|Backup ZIP file successfully created.
+1329837783|details|Chmod to 0644 succeeded.
+1329837783|details|Database Server connection status verified.
+1329837783|details|Finished function `backup_zip_files`.
+1329837783|details|Peak memory usage: 19.664 MB
+1329837783|details|Scheduling Cron
+1329837795|details|(Started new PHP page load process.)
+1329837795|details|Setting greedy script limits.
+1329837795|details|Attempted to increase maximum PHP runtime. Original: 30; New: 7200.
+1329837795|details|Set memory limit to 256M. Previous value < 256M.
+1329837795|details|Original PHP memory limit: 32; New: 256M.
+1329837795|details|Finished greedy script limits.
+1329837795|details|Peak memory usage: 19.613 MB
+1329837795|message|Cleaning up after backup.
+1329837795|details|Removing temp data directory.
+1329837795|details|Removing temp zip directory.
+1329837795|details|Trimming old archives (if needed).
+1329837795|details|Sending manual backup email notification.
+1329837795|message|Finished cleaning up.
+1329837795|action|archive_url^http://mydev.local/wp-content/uploads/backupbuddy_backups/backup-mydev_local-2012_02_21-efk3smzs2n.zip
+1329837795|message|Backup completed successfully in 12 minutes. Done.
+1329837795|action|finish_backup
+1329837795|details|Finished function `post_backup`.
+1329837795|details|Peak memory usage: 19.621 MB

@@ -1,0 +1,138 @@
+<?php
+/*
+ * This is a "reuired login" feature
+ * 
+ * with a nice background option for you.
+ *
+ */
+
+add_action('template_redirect', 'user_logged_in');
+function user_logged_in(){
+            
+    if (is_user_logged_in()) {
+        
+    } 
+    else 
+    {
+        
+        add_action('wp_enqueue_scripts', 'init_settings');
+        add_action('wp_head', 'load_popup');
+        add_action('wp_footer', 'add_form');
+        
+    }
+    
+}
+ 
+
+function init_settings() {
+
+    wp_enqueue_script('thickbox');
+    wp_enqueue_style('thickbox');
+    wp_enqueue_script('jquery');
+    wp_enqueue_style('login_pop_style', plugins_url( 'login_popup.css' , __FILE__) );
+   
+}
+
+
+/* make it pop when not logged in */
+
+function load_popup() {
+
+
+        echo '
+        <script>
+        window.onload = loadLoginNag;
+        function loadLoginNag() {
+        tb_show("Login", "?TB_inline?height=500&width=300&inlineId=form&modal=true", null);
+        }
+        
+        $(document).ready(function(){
+        
+
+            $("#message_slider").delay(2000).queue(function(n){
+                $(this).animate( 
+                { bottom:"40%" }, 
+                { queue:false, duration:1000 }
+                );
+                n();
+            });
+             
+        });
+        </script>
+    ';
+  
+
+
+}
+
+
+function add_form() {
+    
+    $current_page_URL =(isset($_SERVER["HTTPS"]) && $_SERVER["HTTPS"]=="on") ? "https://" : "http://";
+    $current_page_URL .= $_SERVER["SERVER_NAME"] . $_SERVER["REQUEST_URI"];
+
+
+
+    echo '
+<div id="form" style="display:none;">
+	<div id="bg_img_wrap">
+		<div id="bg_img"><img src="' . plugins_url( 'inlog-bg.png' , __FILE__) . '" />
+                                        <div id="message_slider"><span>Na inlog kunt u...<a href="/register">registreer</a></span></div>
+		</div>
+	</div>
+	<p><strong>
+		LOGIN
+	</strong></p>
+	<form name="loginform" id="loginform" action=" ' . get_option('siteurl') . '/wp-login.php" method="post">
+	<div id="loginform_logo"></div>
+		<p>
+			<label>Gebruikersnaam
+				<br />
+				<input type="text" name="log" id="user_login" class="input" value="" size="20" tabindex="10" />
+			</label>
+		</p>
+		<p>
+			<label>Wachtwoord
+				<br />
+				<input type="password" name="pwd" id="user_pass" class="input" value="" size="20" tabindex="20" />
+			</label>
+		</p>
+		<p class="forgetmenot">
+			<label>
+				<input name="rememberme" type="checkbox" id="rememberme" value="forever" tabindex="90" />
+				Deze gegevens onthouden</label>
+		</p>
+		<p class="submit">
+			<input type="submit" name="wp-submit" id="wp-submit" class="button button-primary" value="Inloggen" tabindex="100" />
+			<input type="hidden" name="redirect_to" value="' . $_SERVER["REQUEST_URI"] . '" />
+			<input type="hidden" name="testcookie" value="1" />
+		</p>
+	</form>
+
+</div>
+
+
+';
+
+}
+
+
+
+
+/* redirect stuff */
+/*
+function custom_login_url($login_url) {
+    return get_option('siteurl') . '/';
+}
+
+add_filter('login_url', 'custom_login_url', 1);
+
+add_action('init', 'wpSimpleUserSetup');
+function wpSimpleUserSetup() {
+
+    if (in_array($_SERVER['REQUEST_URI'], array('/wp-login.php', 'wp-login.php?action=register'))) {
+        wp_redirect(wp_login_url());
+        exit ;
+    }
+}
+*/

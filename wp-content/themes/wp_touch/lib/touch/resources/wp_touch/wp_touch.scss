@@ -1,0 +1,33 @@
+$base-color: #0033cc;
+$base-gradient: 'glossy';
+
+@import 'sencha-touch/default/all';
+
+@include sencha-panel;
+@include sencha-buttons;
+@include sencha-sheet;
+@include sencha-picker;
+@include sencha-tabs;
+@include sencha-toolbar;
+@include sencha-toolbar-forms;
+@include sencha-carousel;
+@include sencha-indexbar;
+@include sencha-list;
+@include sencha-list-paging;
+@include sencha-list-pullrefresh;
+@include sencha-layout;
+@include sencha-form;
+@include sencha-msgbox;
+@include sencha-loading-spinner;
+
+@include pictos-iconmask('arrow_left');
+@include pictos-iconmask('action');
+@include pictos-iconmask('arrow_right');
+@include pictos-iconmask('backspace');
+@include pictos-iconmask('help');
+@include pictos-iconmask('search');
+@include pictos-iconmask('search_black');
+@include pictos-iconmask('search1');
+@include pictos-iconmask('search2');
+@include pictos-iconmask('chat');
+@include pictos-iconmask('chat1');

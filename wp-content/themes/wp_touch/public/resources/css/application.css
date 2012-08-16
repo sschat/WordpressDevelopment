@@ -1,0 +1,36 @@
+.post h2 {
+    font-size: 24px;
+    text-shadow: 1px -1px #d3d3d3;
+    font-family: "Times New Roman";
+    color: #000;
+}
+
+.post .meta {
+    font-size: 11px;
+    padding: 5px 0;
+    text-shadow: 1px -1px #e3e3e3;
+}
+
+.post p {
+    font-size: 14px;
+    text-shadow: 1px -1px #e3e3e3;
+    line-height: 20px;
+    margin-bottom: 7px;
+}
+
+.single {
+    padding: 15px;
+}
+
+.comments {
+    padding: 15px;
+    border-bottom: 1px solid #d3d3d3;
+}
+.cmeta {
+    font-size: 12px;
+}
+.ccontent {
+    font-size: 14px;
+    margin-top: 5px;
+    line-height: 20px;
+}

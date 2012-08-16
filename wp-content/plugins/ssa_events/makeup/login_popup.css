@@ -1,0 +1,98 @@
+
+
+
+
+#TB_window {
+z-index: 9999;
+}
+
+/*
+#loginform_logo{
+	background: url('icon-b-c.png') top center no-repeat;
+	float:right;
+	width:35px;
+	height:45px;
+	position: absolute;
+	right: 68px;
+	top: 91px;
+
+}
+
+.TB_overlayBG {
+
+	background: transparent;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+	filter: alpha(opacity=1);
+	-moz-opacity: 1;
+	opacity: 1;
+	width: 100%
+}
+#TB_overlay {
+	z-index: 9998;
+	overflow:hidden;
+}
+.TB_modal {
+	height:500px!important;
+}
+#TB_window {
+	padding: 10px 20px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border-width: 1px;
+	border-color: #333;
+	-moz-box-shadow: initial;
+	-webkit-box-shadow: initial;
+	-khtml-box-shadow: initial;
+	box-shadow: initial;
+	top: 50%;
+	z-index: 9999;
+	background: #ccc;
+}
+
+
+#login_error, .message {
+	-moz-border-radius: 0 0 6px 6px;
+	-webkit-border-radius: 0 0 6px 6px;
+	border-radius: 0 0 6px 6px;
+	border-top: 0 none;
+	margin-left: 0;
+	position: absolute;
+	top: 0;
+	width: 294px;
+}
+#loginform {
+	
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	margin-left: 0;
+	padding: 55px;
+	-moz-box-shadow: 0 2px 10px 0 #111;
+	-webkit-box-shadow: 0 2px 10px 0 #111;
+	box-shadow: 0 2px 10px 0 #111;
+	background : #eee;
+	background: -moz-linear-gradient(top,#eee,#ccc);
+	background: -webkit-gradient(linear,left top,left bottom,from(#eee),to(#ccc));
+	
+	border: 3px solid #555
+}
+#loginform label {
+	text-shadow: 0 1px 0 #FFF;
+}
+#loginform .input {
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border-color: #CCC;
+}
+#loginform .input:hover {
+	border-color: #9BF;
+}
+#loginform .input:focus {
+	border-color: #06C;
+	-moz-box-shadow: 0 0 6px rgba(0,100,200,0.25);
+	-webkit-box-shadow: 0 0 6px rgba(0,100,200,0.25);
+	box-shadow: 0 0 6px rgba(0,100,200,0.25);
+}
+*/

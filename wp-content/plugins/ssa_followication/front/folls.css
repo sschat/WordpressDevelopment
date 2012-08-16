@@ -1,0 +1,56 @@
+.followbtn{
+
+/*    margin: 10px;
+    width:50px;
+    height:50px;*/
+
+}
+#followload {
+    
+    margin:auto;
+    padding-left:30px;
+    padding-top:5px;
+
+
+}
+
+#followbtn{
+
+ text-decoration:none; text-align:center;
+ padding:1px 16px;
+ display:inline-block;
+
+
+ border:solid 1px #949494;
+ -webkit-border-radius:2px;
+ -moz-border-radius:2px;
+ border-radius: 2px;
+ font:12px  Georgia, 'Bitstream Charter', serif;
+
+
+ color:#ffffff;
+ background-color:#9cbfd3;
+ background-image: -moz-linear-gradient(top, #afd7ed 0%, #9cbfd3 100%);
+ background-image: -webkit-linear-gradient(top, #afd7ed 0%, #9cbfd3 100%);
+ /*
+  * 
+  _background-image: -o-linear-gradient(top, #afd7ed 0%, #9cbfd3 100%);
+ _background-image: -ms-linear-gradient(top, #afd7ed 0% ,#9cbfd3 100%);
+ _filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#afd7ed', endColorstr='#9cbfd3',GradientType=0 );
+ _background-image: linear-gradient(top, #afd7ed 0% ,#9cbfd3 100%);
+ _-webkit-box-shadow:1px 1px 1px #050505;  -moz-box-shadow: 1px 1px 1px #050505;  box-shadow:1px 1px 1px #050505;
+
+
+ text-shadow: 1px 0px 2px #000000;
+ filter: dropshadow(color=#000000, offx=1, offy=0); }*/
+}
+
+#followbtn:hover{
+
+ position: relative;
+ top:1px;
+ -webkit-box-shadow: none;
+ -moz-box-shadow: none;
+ box-shadow:none;
+
+}
